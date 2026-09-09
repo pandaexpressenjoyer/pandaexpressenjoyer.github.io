@@ -47,7 +47,7 @@
           Aditya Ganguli
         </h1>
         <p class="text-base sm:text-lg font-mono text-zinc-400 leading-relaxed">
-          Computer Engineering Student at McMaster University
+          Computer Engineering Student / Former IT Intern at Zurich Insurance Toronto
         </p>
 
         <!-- Social links with logos -->
@@ -85,37 +85,27 @@
   </section>
 
   <!-- Main container -->
-  <div class="max-w-5xl mx-auto px-6 py-16 space-y-16">
+  <div class="max-w-5xl mx-auto px-6 py-16 space-y-20">
 
     <!-- About section -->
-    <header id="about" class="space-y-4 max-w-2xl">
-      <div>
-        <h2 class="text-2xl font-bold tracking-tight text-zinc-100">About</h2>
-        <p class="text-zinc-400 text-sm mt-1 font-mono">Computer Engineering Student / Former IT Intern at Zurich Insurance Toronto</p>
-      </div>
-      <p class="text-zinc-300 text-sm leading-relaxed">
+    <section id="about" class="space-y-3 max-w-3xl">
+      <h2 class="text-2xl font-bold tracking-tight text-zinc-100">About</h2>
+      <p class="text-zinc-400 text-sm font-mono">Computer Engineering Student / Former IT Intern at Zurich Insurance Toronto</p>
+      <p class="text-zinc-300 text-sm leading-relaxed pt-1">
         intro paragraph placeholder.
       </p>
-      <div class="flex flex-wrap gap-4 text-xs font-mono pt-1 text-zinc-400">
-        <a href="assets/resume_sept_8th_26.pdf" target="_blank" class="text-zinc-200 underline underline-offset-4 hover:text-white">Resume (PDF) ↗</a>
-        <a href="https://github.com/pandaexpressenjoyer" target="_blank" class="hover:text-zinc-200 transition">GitHub ↗</a>
-        <a href="https://www.linkedin.com/in/aditya-ganguli-00140a23a/" target="_blank" class="hover:text-zinc-200 transition">LinkedIn ↗</a>
-        <a href="mailto:adi.p.ganguli@gmail.com" class="hover:text-zinc-200 transition">Email ↗</a>
-      </div>
-    </header>
+    </section>
 
     <!-- Projects section -->
     <section id="projects" class="space-y-6">
       <h2 class="text-xs font-mono uppercase tracking-widest text-zinc-500">Selected Projects</h2>
       
-      <!-- N x 3 Responsive Grid -->
+      <!-- Responsive Project Grid -->
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
         <!-- Project card 1 -->
         <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-700 transition flex flex-col justify-between">
-          <!-- Image slot (links to github) -->
           <a href="https://github.com/pandaexpressenjoyer" target="_blank" rel="noopener noreferrer" class="block aspect-video bg-zinc-950 border-b border-zinc-800/80 flex items-center justify-center text-zinc-600 font-mono text-xs hover:text-zinc-400 transition">
-            <!-- Replace span with <img src="..." alt="..." class="w-full h-full object-cover"> when ready -->
             <span>Image Placeholder</span>
           </a>
           <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
@@ -129,7 +119,6 @@
                 placeholder summary of the technical problem, implementation details, and overall result.
               </p>
             </div>
-            <!-- Bottom row: Tags and GitHub link -->
             <div class="pt-3 border-t border-zinc-800/60 flex items-center justify-between">
               <div class="flex flex-wrap gap-1.5">
                 <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">C++</span>
@@ -146,7 +135,6 @@
 
         <!-- Project card 2 -->
         <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-700 transition flex flex-col justify-between">
-          <!-- Image slot (links to github) -->
           <a href="https://github.com/pandaexpressenjoyer" target="_blank" rel="noopener noreferrer" class="block aspect-video bg-zinc-950 border-b border-zinc-800/80 flex items-center justify-center text-zinc-600 font-mono text-xs hover:text-zinc-400 transition">
             <span>Image Placeholder</span>
           </a>
@@ -161,7 +149,6 @@
                 placeholder summary of the technical problem, implementation details, and overall result.
               </p>
             </div>
-            <!-- Bottom row: Tags and GitHub link -->
             <div class="pt-3 border-t border-zinc-800/60 flex items-center justify-between">
               <div class="flex flex-wrap gap-1.5">
                 <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">FreeRTOS</span>
@@ -178,7 +165,6 @@
 
         <!-- Project card 3 -->
         <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-700 transition flex flex-col justify-between">
-          <!-- Image slot (links to github) -->
           <a href="https://github.com/pandaexpressenjoyer" target="_blank" rel="noopener noreferrer" class="block aspect-video bg-zinc-950 border-b border-zinc-800/80 flex items-center justify-center text-zinc-600 font-mono text-xs hover:text-zinc-400 transition">
             <span>Image Placeholder</span>
           </a>
@@ -193,7 +179,6 @@
                 placeholder summary of the technical problem, implementation details, and overall result.
               </p>
             </div>
-            <!-- Bottom row: Tags and GitHub link -->
             <div class="pt-3 border-t border-zinc-800/60 flex items-center justify-between">
               <div class="flex flex-wrap gap-1.5">
                 <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">Embedded C</span>
@@ -235,13 +220,101 @@
       </div>
     </section>
 
-    <!-- Technical skills section -->
-    <section id="skills" class="space-y-4 max-w-2xl">
-      <h2 class="text-xs font-mono uppercase tracking-widest text-zinc-500">Technical Skills</h2>
-      <div class="text-xs font-mono space-y-2 text-zinc-400 leading-relaxed">
-        <p><span class="text-zinc-200">Languages:</span> add languages here</p>
-        <p><span class="text-zinc-200">Hardware & Systems:</span> add technical skills here</p>
-        <p><span class="text-zinc-200">Tools:</span> add software and tools here</p>
+    <!-- Skills section -->
+    <section id="skills" class="space-y-8">
+      <div class="space-y-2">
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight text-white">Skills</h2>
+        <div class="w-10 h-1 bg-zinc-500 rounded"></div>
+      </div>
+
+      <div class="space-y-8">
+
+        <!-- Languages row -->
+        <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
+          <span class="w-28 shrink-0 text-sm font-medium text-zinc-400">Languages</span>
+          <div class="flex flex-wrap gap-3">
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="C">
+              <img src="assets/skills/C.svg" alt="C" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="C++">
+              <img src="assets/skills/C++ (CPlusPlus).svg" alt="C++" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="Python">
+              <img src="assets/skills/Python.svg" alt="Python" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="Java">
+              <img src="assets/skills/Java.svg" alt="Java" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="JavaScript">
+              <img src="assets/skills/JavaScript.svg" alt="JavaScript" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="Assembly">
+              <img src="assets/skills/asm.png" alt="Assembly" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="MATLAB">
+              <img src="assets/skills/MATLAB.svg" alt="MATLAB" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="HTML5">
+              <img src="assets/skills/HTML5.svg" alt="HTML5" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="CSS3">
+              <img src="assets/skills/CSS3.svg" alt="CSS3" class="w-full h-full object-contain" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Tools & Hardware row -->
+        <div class="flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-8">
+          <span class="w-28 shrink-0 text-sm font-medium text-zinc-400">Tools</span>
+          <div class="flex flex-wrap gap-3">
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="Intel Quartus Prime">
+              <img src="assets/skills/quartus.png" alt="Quartus" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="ModelSim">
+              <img src="assets/skills/modelsim.svg" alt="ModelSim" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="LTSpice">
+              <img src="assets/skills/ltspice.webp" alt="LTSpice" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="PSpice">
+              <img src="assets/skills/pspice.webp" alt="PSpice" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="AutoCAD">
+              <img src="assets/skills/autocad.png" alt="AutoCAD" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="Autodesk Inventor">
+              <img src="assets/skills/inventor.webp" alt="Inventor" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="Fusion 360">
+              <img src="assets/skills/fusion360.webp" alt="Fusion 360" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="KiCad">
+              <img src="assets/skills/kicad.webp" alt="KiCad" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="Keil uVision">
+              <img src="assets/skills/keil.webp" alt="Keil" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="Arduino">
+              <img src="assets/skills/Arduino.svg" alt="Arduino" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="Raspberry Pi">
+              <img src="assets/skills/Raspberry Pi.svg" alt="Raspberry Pi" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="STM32">
+              <img src="assets/skills/stm32.webp" alt="STM32" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="ESP32">
+              <img src="assets/skills/esp32.png" alt="ESP32" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="PyCharm">
+              <img src="assets/skills/PyCharm.svg" alt="PyCharm" class="w-full h-full object-contain" />
+            </div>
+            <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-xl p-2.5 flex items-center justify-center shadow hover:scale-105 transition-transform" title="Anaconda">
+              <img src="assets/skills/Anaconda.svg" alt="Anaconda" class="w-full h-full object-contain" />
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
