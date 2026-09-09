@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aditya Ganguli — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-zinc-950 text-zinc-300 font-sans antialiased min-h-screen">
 
+  <div class="max-w-2xl mx-auto px-6 py-16 space-y-16">
+
+    <!-- Intro -->
+    <header class="space-y-4">
+      <div>
+        <h1 class="text-2xl font-bold tracking-tight text-zinc-100">Aditya Ganguli</h1>
+        <p class="text-zinc-400 text-sm mt-1 font-mono">Computer Engineering Student / Former IT Intern at Zurich Insurance Toronto</p>
+      </div>
+      <p class="text-zinc-300 text-sm leading-relaxed">
+        intro paragraph placeholder.
+      </p>
+      <div class="flex flex-wrap gap-4 text-xs font-mono pt-1 text-zinc-400">
+        <a href="assets/resume_sept_8th_26.pdf" target="_blank" class="text-zinc-200 underline underline-offset-4 hover:text-white">Resume (PDF) ↗</a>
+        <a href="https://github.com/pandaexpressenjoyer" target="_blank" class="hover:text-zinc-200 transition">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/aditya-ganguli-00140a23a/" target="_blank" class="hover:text-zinc-200 transition">LinkedIn ↗</a>
+        <a href="mailto:adi.p.ganguli@gmail.com" class="hover:text-zinc-200 transition">Email ↗</a>
+      </div>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="space-y-6">
+      <h2 class="text-xs font-mono uppercase tracking-widest text-zinc-500">Selected Projects</h2>
+      <div class="space-y-8">
+
+        <!-- Project 1 -->
+        <article class="space-y-2">
+          <div class="flex items-baseline justify-between gap-4">
+            <h3 class="text-base font-semibold text-zinc-100">
+              <a href="#" class="hover:underline underline-offset-4">Project Title One ↗</a>
+            </h3>
+            <span class="text-xs font-mono text-zinc-500 shrink-0">2026</span>
+          </div>
+          <p class="text-sm text-zinc-400 leading-relaxed">
+            placeholder summary
+          </p>
+          <div class="flex flex-wrap gap-2 pt-1">
+            <span class="px-2 py-0.5 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">C++</span>
+            <span class="px-2 py-0.5 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">SDL2</span>
+            <span class="px-2 py-0.5 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">Make</span>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="space-y-2">
+          <div class="flex items-baseline justify-between gap-4">
+            <h3 class="text-base font-semibold text-zinc-100">
+              <a href="#" class="hover:underline underline-offset-4">Project Title Two ↗</a>
+            </h3>
+            <span class="text-xs font-mono text-zinc-500 shrink-0">2025</span>
+          </div>
+          <p class="text-sm text-zinc-400 leading-relaxed">
+            placeholder summary
+          </p>
+          <div class="flex flex-wrap gap-2 pt-1">
+            <span class="px-2 py-0.5 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">FreeRTOS</span>
+            <span class="px-2 py-0.5 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">ESP32</span>
+            <span class="px-2 py-0.5 text-xs font-mono rounded bg-zinc-900 border border-zinc-800 text-zinc-300">KiCad</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Experience / Education -->
+    <section class="space-y-6">
+      <h2 class="text-xs font-mono uppercase tracking-widest text-zinc-500">Experience & Education</h2>
+      <div class="space-y-6">
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="text-sm font-semibold text-zinc-200">Company and Role Title</h3>
+            <p class="text-xs text-zinc-400 mt-0.5">short summary placeholder.</p>
+          </div>
+          <span class="text-xs font-mono text-zinc-500 shrink-0">May-August 2025</span>
+        </div>
+
+        <div class="flex justify-between items-start">
+          <div>
+            <h3 class="text-sm font-semibold text-zinc-200">B.Eng. in Computer Engineering</h3>
+            <p class="text-xs text-zinc-400 mt-0.5">McMaster University</p>
+          </div>
+          <span class="text-xs font-mono text-zinc-500 shrink-0">2024 - Present, Expected 2029</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills Summary -->
+    <section class="space-y-4">
+      <h2 class="text-xs font-mono uppercase tracking-widest text-zinc-500">Technical Skills</h2>
+      <div class="text-xs font-mono space-y-2 text-zinc-400 leading-relaxed">
+        <p><span class="text-zinc-200">Languages:</span> add languages here</p>
+        <p><span class="text-zinc-200">Hardware & Systems:</span> add technical skills here</p>
+        <p><span class="text-zinc-200">Tools:</span> add software and tools here</p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-8 border-t border-zinc-900 text-xs font-mono text-zinc-600">
+      <p>Built with HTML & Tailwind • Hosted on GitHub Pages</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
