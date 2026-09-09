@@ -7,7 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <script>
     tailwind.config = {
       theme: {
@@ -24,10 +24,10 @@
 <body class="bg-zinc-950 text-zinc-300 font-sans antialiased min-h-screen">
 
   <!-- Navigation bar -->
-  <nav class="sticky top-0 z-50 w-full bg-zinc-900/90 backdrop-blur border-b border-zinc-800">
+  <nav class="sticky top-0 z-50 w-full bg-zinc-950/90 backdrop-blur border-b border-zinc-800">
     <div class="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
-      <a href="#" class="text-lg font-bold text-white">Aditya Ganguli</a>
-      <div class="flex items-center space-x-6 text-sm text-zinc-300">
+      <a href="#" class="text-base font-semibold text-white">Aditya Ganguli</a>
+      <div class="flex items-center space-x-6 text-sm text-zinc-400">
         <a href="#about" class="hover:text-white transition">About</a>
         <a href="#projects" class="hover:text-white transition">Projects</a>
         <a href="#experience" class="hover:text-white transition">Experience</a>
@@ -37,40 +37,66 @@
     </div>
   </nav>
 
-  <!-- Hero section -->
-  <section class="max-w-4xl mx-auto px-6 pt-20 pb-10 text-left space-y-4">
-    <h1 class="text-4xl sm:text-6xl font-bold tracking-tight text-white">
-      Aditya Ganguli
-    </h1>
-    <p class="text-base sm:text-lg font-mono text-zinc-400">
-      Computer Engineering Student / Systems Developer
-    </p>
-    <div class="flex items-center space-x-5 pt-2 text-zinc-400">
-      <a href="https://www.linkedin.com/in/aditya-ganguli-00140a23a/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition" aria-label="LinkedIn">
-        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-          <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.07v8.37h2.78z"/>
+  <!-- Title landing page -->
+  <section class="min-h-[calc(100vh-4rem)] flex flex-col justify-center relative px-6">
+    <div class="max-w-4xl mx-auto w-full space-y-6">
+      
+      <!-- Name -->
+      <h1 class="text-5xl sm:text-7xl md:text-8xl font-extrabold tracking-tight text-white">
+        Aditya Ganguli
+      </h1>
+
+      <!-- Subtitle -->
+      <p class="text-lg sm:text-xl font-mono text-zinc-400 max-w-2xl leading-relaxed">
+        Computer Engineering Student / Former IT Intern at Zurich Insurance Toronto
+      </p>
+
+      <!-- Social links with logos -->
+      <div class="flex items-center space-x-5 pt-2 text-zinc-400">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/aditya-ganguli-00140a23a/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition" aria-label="LinkedIn">
+          <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+            <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.07v8.37h2.78z"/>
+          </svg>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/pandaexpressenjoyer" target="_blank" rel="noopener noreferrer" class="hover:text-white transition" aria-label="GitHub">
+          <svg class="w-7 h-7 fill-current" viewBox="0 0 24 24">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Scroll down indicator -->
+    <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-zinc-500 animate-bounce">
+      <a href="#about" aria-label="Scroll down">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
         </svg>
       </a>
-      <a href="https://github.com/pandaexpressenjoyer" target="_blank" rel="noopener noreferrer" class="hover:text-white transition" aria-label="GitHub">
-        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
-        </svg>
-      </a>
-      <a href="assets/resume_sept_8th_26.pdf" target="_blank" class="text-xs font-mono text-zinc-300 underline underline-offset-4 hover:text-white">Resume (PDF) ↗</a>
     </div>
   </section>
 
-  <!-- Main content container -->
-  <div class="max-w-4xl mx-auto px-6 pb-16 space-y-16">
+  <!-- Main container -->
+  <div class="max-w-2xl mx-auto px-6 py-16 space-y-16">
 
     <!-- About section -->
-    <header id="about" class="space-y-4 pt-4 border-t border-zinc-900">
-      <h2 class="text-xs font-mono uppercase tracking-widest text-zinc-500">About</h2>
-      <p class="text-zinc-300 text-sm leading-relaxed max-w-2xl">
+    <header id="about" class="space-y-4">
+      <div>
+        <h2 class="text-2xl font-bold tracking-tight text-zinc-100">About</h2>
+        <p class="text-zinc-400 text-sm mt-1 font-mono">Computer Engineering Student / Former IT Intern at Zurich Insurance Toronto</p>
+      </div>
+      <p class="text-zinc-300 text-sm leading-relaxed">
         intro paragraph placeholder.
       </p>
       <div class="flex flex-wrap gap-4 text-xs font-mono pt-1 text-zinc-400">
-        <a href="mailto:adi.p.ganguli@gmail.com" class="hover:text-zinc-200 transition">adi.p.ganguli@gmail.com ↗</a>
+        <a href="assets/resume_sept_8th_26.pdf" target="_blank" class="text-zinc-200 underline underline-offset-4 hover:text-white">Resume (PDF) ↗</a>
+        <a href="https://github.com/pandaexpressenjoyer" target="_blank" class="hover:text-zinc-200 transition">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/aditya-ganguli-00140a23a/" target="_blank" class="hover:text-zinc-200 transition">LinkedIn ↗</a>
+        <a href="mailto:adi.p.ganguli@gmail.com" class="hover:text-zinc-200 transition">Email ↗</a>
       </div>
     </header>
 
