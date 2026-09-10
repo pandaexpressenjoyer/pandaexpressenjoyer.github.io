@@ -346,6 +346,9 @@
                 <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">Circuit Design</span>
                 <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">MOSFETs</span>
                 <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">LTspice</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">Function Generator</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">Analog Discovery 3</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">Oscilloscope</span>
               </div>
               <a href="assets/gangua5-2EI4-Project2.pdf" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-white transition" aria-label="Project PDF">
                 <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
@@ -354,6 +357,81 @@
               </a>
             </div>
           </div>
+          <!-- Project card 3: BJT Buffer Amplifier -->
+        <div class="project-card flex flex-col bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-700 transition" data-category="hardware">
+          <a href="assets/gangua5-2EI4-Project3.pdf" target="_blank" rel="noopener noreferrer" class="block aspect-video bg-zinc-950 border-b border-zinc-800/80 overflow-hidden group flex items-center justify-center p-3">
+            <img 
+              src="assets/proj3.png" 
+              alt="BJT Buffer Amplifier Project" 
+              class="h-full w-auto max-w-full object-contain group-hover:scale-105 transition-transform duration-200"
+            />
+          </a>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <h3 class="text-base font-semibold text-zinc-100">
+                <a href="assets/gangua5-2EI4-Project3.pdf" target="_blank" rel="noopener noreferrer" class="hover:underline underline-offset-4 inline-flex items-center gap-1">
+                  BJT Buffer Amplifier Design ↗
+                </a>
+              </h3>
+              <p class="text-xs text-zinc-400 leading-relaxed">
+                Designed, simulated, and implemented a voltage buffer amplifier utilizing a common collector topology with a 2N3904 NPN BJT[cite: 4]. Engineered to drive a 100 Ω load from a ±0.5V input source, achieving a midband gain of 0.9400 with only 6% signal attenuation[cite: 4]. Validated theoretical models using LTspice and confirmed physical circuit linearity and minimal phase difference (1.82°) using an Analog Discovery 3[cite: 4].
+              </p>
+            </div>
+            <div class="pt-3 border-t border-zinc-800/60 flex items-center justify-between">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">Analog Circuits</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">BJT</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">LTspice</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">Function Generator</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">Analog Discovery 3</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">Oscilloscope</span>
+              </div>
+              <a href="assets/gangua5-2EI4-Project3.pdf" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-white transition" aria-label="Project PDF">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project card 4: CMOS XOR Gate -->
+        <div class="project-card flex flex-col bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-700 transition" data-category="hardware">
+          <a href="assets/gangua5-2EI4-Project4.pdf" target="_blank" rel="noopener noreferrer" class="block aspect-video bg-zinc-950 border-b border-zinc-800/80 overflow-hidden group flex items-center justify-center p-3">
+            <img 
+              src="assets/proj4.png" 
+              alt="CMOS XOR Gate Project" 
+              class="h-full w-auto max-w-full object-contain group-hover:scale-105 transition-transform duration-200"
+            />
+          </a>
+          <div class="p-5 flex-1 flex flex-col justify-between space-y-4">
+            <div class="space-y-2">
+              <h3 class="text-base font-semibold text-zinc-100">
+                <a href="assets/gangua5-2EI4-Project4.pdf" target="_blank" rel="noopener noreferrer" class="hover:underline underline-offset-4 inline-flex items-center gap-1">
+                  CMOS Logic Gate & Timing Analysis ↗
+                </a>
+              </h3>
+              <p class="text-xs text-zinc-400 leading-relaxed">
+                Constructed a hardware CMOS XOR gate utilizing pull-up and pull-down networks made of 6 NMOS and 6 PMOS transistors via CD4007CN ICs[cite: 5]. Analyzed theoretical ideal sizing (2.5:1 PMOS-to-NMOS ratio) versus fixed component limitations and their impact on transition asymmetry[cite: 5]. Executed static level testing, functional truth-table verification, and dynamic propagation delay timing analysis (162.48 µs average delay) using an Analog Discovery 3[cite: 5].
+              </p>
+            </div>
+            <div class="pt-3 border-t border-zinc-800/60 flex items-center justify-between">
+              <div class="flex flex-wrap gap-1.5">
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">Digital Logic</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">CMOS</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">Hardware</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">Function Generator</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">Analog Discovery 3</span>
+                <span class="px-2 py-0.5 text-[11px] font-mono rounded bg-zinc-800 text-zinc-300">Oscilloscope</span>
+              </div>
+              <a href="assets/gangua5-2EI4-Project4.pdf" target="_blank" rel="noopener noreferrer" class="text-zinc-400 hover:text-white transition" aria-label="Project PDF">
+                <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
