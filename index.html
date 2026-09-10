@@ -99,13 +99,22 @@
 
     <!-- Projects section -->
     <section id="projects" class="space-y-6">
-      <h2 class="text-xs font-mono uppercase tracking-widest text-zinc-500">My Projects :D</h2>
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-zinc-500">My Projects :D</h2>
+        
+        <!-- Filter Buttons -->
+        <div class="flex gap-2">
+          <button class="filter-btn px-3 py-1.5 text-xs font-mono rounded-lg bg-zinc-200 text-zinc-950 transition" data-filter="all">All</button>
+          <button class="filter-btn px-3 py-1.5 text-xs font-mono rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-200 transition" data-filter="hardware">Hardware</button>
+          <button class="filter-btn px-3 py-1.5 text-xs font-mono rounded-lg bg-zinc-900 border border-zinc-800 text-zinc-400 hover:text-zinc-200 transition" data-filter="software">Software</button>
+        </div>
+      </div>
       
       <!-- Responsive Project Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="projects-grid">
 
         <!-- Project card 1: Ashida Wii -->
-        <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-700 transition flex flex-col justify-between">
+        <div class="project-card flex flex-col bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-700 transition" data-category="hardware">
           <div class="aspect-video bg-zinc-950 border-b border-zinc-800/80 overflow-hidden flex items-center justify-center p-3">
             <img 
               src="assets/ashidawii.jpg" 
@@ -136,7 +145,7 @@
         </div>
 
         <!-- Project card 2: Small-Scale LiDAR Scanner -->
-        <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-700 transition flex flex-col justify-between">
+        <div class="project-card flex flex-col bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-700 transition" data-category="hardware software">
           <a href="https://github.com/pandaexpressenjoyer/Small-Scale-LiDAR-Scanner" target="_blank" rel="noopener noreferrer" class="block aspect-video bg-zinc-950 border-b border-zinc-800/80 overflow-hidden group flex items-center justify-center p-3">
             <img 
               src="assets/lidar.png" 
@@ -172,7 +181,7 @@
         </div>
 
         <!-- Project card 3: GBU -->
-        <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-700 transition flex flex-col justify-between">
+        <div class="project-card flex flex-col bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-700 transition" data-category="software">
           <a href="https://github.com/pandaexpressenjoyer/GBU" target="_blank" rel="noopener noreferrer" class="block aspect-video bg-zinc-950 border-b border-zinc-800/80 overflow-hidden group flex items-center justify-center p-3">
             <img 
               src="assets/tetris.png" 
@@ -206,7 +215,7 @@
         </div>
 
         <!-- Project card 4: Smart Phone Case -->
-        <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-700 transition flex flex-col justify-between">
+        <div class="project-card flex flex-col bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-700 transition" data-category="hardware software">
           <a href="https://frill-slouch-f41.notion.site/Project-3-Power-in-Community-16ccd7987ca9813eba7affbbf28d77ef" target="_blank" rel="noopener noreferrer" class="block aspect-video bg-zinc-950 border-b border-zinc-800/80 overflow-hidden group flex items-center justify-center p-3">
             <img 
               src="assets/smartcase.jpeg" 
@@ -242,7 +251,7 @@
         </div>
 
         <!-- Project card 5: Network Analyzer -->
-        <div class="bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-700 transition flex flex-col justify-between">
+        <div class="project-card flex flex-col bg-zinc-900/50 border border-zinc-800 rounded-xl overflow-hidden hover:border-zinc-700 transition" data-category="software">
           <a href="https://github.com/pandaexpressenjoyer/networkanalyzer" target="_blank" rel="noopener noreferrer" class="block aspect-video bg-zinc-950 border-b border-zinc-800/80 overflow-hidden group flex items-center justify-center p-3">
             <img 
               src="assets/networkanalyzer.png" 
@@ -459,5 +468,37 @@
 
   </div>
 
+  <!-- Project Filtering Logic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const buttons = document.querySelectorAll('.filter-btn');
+      const projects = document.querySelectorAll('.project-card');
+
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Reset styling on all buttons
+          buttons.forEach(btn => {
+            btn.classList.remove('bg-zinc-200', 'text-zinc-950');
+            btn.classList.add('bg-zinc-900', 'text-zinc-400', 'border', 'border-zinc-800');
+          });
+          
+          // Apply active styling to the clicked button
+          button.classList.remove('bg-zinc-900', 'text-zinc-400', 'border', 'border-zinc-800');
+          button.classList.add('bg-zinc-200', 'text-zinc-950');
+
+          const filterValue = button.getAttribute('data-filter');
+
+          // Filter projects based on data-category
+          projects.forEach(project => {
+            if (filterValue === 'all' || project.getAttribute('data-category').includes(filterValue)) {
+              project.style.display = 'flex';
+            } else {
+              project.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  </script>
 </body>
 </html>
